@@ -1,0 +1,112 @@
+.tesla{
+    display: flex;
+    margin: 25px auto;
+    max-width: 600px;
+    border: 2px solid black;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(12, 12, 124);
+}
+.tesla:hover{
+    -webkit-animation: shadow 4s infinite;
+}
+@keyframes shadow{
+    0%{
+        box-shadow: 0px 0px 10px 5px rgb(26, 205, 166);
+    }
+    30%{
+        box-shadow: 0px 0px 10px 5px rgb(227, 200, 28);
+    }
+    60%{
+        box-shadow: 0px 0px 10px 5px rgb(20, 156, 93);
+    }
+    100%{
+        box-shadow: 0px 0px 10px 5px rgb(187, 17, 17);
+    }
+}
+.like{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    transition: 0.2s;
+}
+.like:hover{
+    box-shadow: 0px 0px 5px 5px rgb(0, 0, 255);
+}
+
+.dislike{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color:white;
+    transition: 0.2s;
+}
+.dislike:hover{
+    box-shadow: 0px 0px 5px 5px rgb(255, 0, 0);
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.form-input input{
+   border-radius: 5px;
+   margin-bottom: 10px;
+   box-shadow: 0px 0px 10px 4px rgb(22, 22, 69);
+   transition: 0.2s;
+}
+.form-input input:hover{
+    box-shadow: 0px 0px 7px 5px rgb(22, 22, 69);
+}
+
+.form-input textarea{
+    resize: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 4px rgb(22, 22, 69);
+    transition: 0.2s;
+}
+.form-input textarea:hover{
+    box-shadow: 0px 0px 7px 5px rgb(22, 22, 69);
+}
+.button{
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px 4px rgb(172, 255, 47, 0.732);
+    background-color: rgba(172, 255, 47, 0.732);
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(15, 127, 69, 0.732);
+    background-color: rgba(15, 127, 69, 0.732);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+.h3{
+    text-align: center;
+}
+.delete{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    padding: 10px 20px;
+}
+.delete:hover{
+    box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+}
+.nut{
+    margin-bottom: 15px;
+}
+.form-input{
+   margin-bottom: 10px;
+   margin-top: 15px;
+}

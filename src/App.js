@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Main from './Main';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Profile from './Profile';
+import data from './data';
+import Profiles from './Profiles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+   <div className="App">
+      <Header />
+      <Routes>
+        <Route path='/main.js' element={<Main data={data.PostPage} />}/>
+        <Route path='/Profile.js' element={<Profiles data={data.ProfilePage}/>}/>
+      </Routes>
     </div>
+    </BrowserRouter>
+   
   );
 }
 
